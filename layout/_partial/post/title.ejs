@@ -12,4 +12,9 @@
       <%= post.title %>
     </h1>
   <% } %>
+  <% if (post.author) { %>
+    <div class="author-link">
+      by <a class="author-link" href="/tag/<%- post.author %>"><%= post.author %></a>
+    </div>
+  <% } %>
 <% } %>
